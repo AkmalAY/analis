@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeduliSesama | Platform Donasi Internasional</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PEDULI<span>SESAMA</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#founder">Founder</a></li>
+                <li class="nav-cta"><a href="#donation-box">Donasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Official Platform</span>
+            <h1>Bersama Kita <br><span class="text-gradient">Bantu Sesama</span></h1>
+            <p>Salurkan kepedulian Anda melalui program yang terukur dan transparan.</p>
+            <div class="hero-btns">
+                <a href="#donation-box" class="btn btn-primary">Donasi Sekarang</a>
+                <a href="#program" class="btn btn-outline">Lihat Detail</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="program" class="program-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Program <span>Kemanusiaan</span></h2>
+                <p>Pilih misi yang ingin Anda dukung hari ini.</p>
+            </div>
+            
+            <div class="program-detail-grid">
+                <div class="program-card">
+                    <i data-lucide="heart-handshake" class="icon-p"></i>
+                    <h3>Bantuan Palestina</h3>
+                    <p>Fokus pada penyediaan air bersih, makanan siap saji, dan bantuan medis darurat bagi warga di zona konflik.</p>
+                </div>
+                <div class="program-card">
+                    <i data-lucide="baby" class="icon-p"></i>
+                    <h3>Pencegahan Stunting</h3>
+                    <p>Pemberian asupan gizi tambahan bagi ibu hamil dan balita di pelosok desa untuk menciptakan generasi unggul.</p>
+                </div>
+                <div class="program-card">
+                    <i data-lucide="users" class="icon-p"></i>
+                    <h3>Santunan Duafa</h3>
+                    <p>Bantuan modal usaha mikro dan sembako bagi janda serta lansia agar mereka dapat hidup lebih layak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="founders-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our <span>Founders</span></h2>
+                <p>Tim ahli yang mengelola amanah Anda secara profesional.</p>
+            </div>
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <div class="founder-photo"><img src="https://ui-avatars.com/api/?name=F1&background=059669&color=fff" alt="F1"></div>
+                    <h4>FOUNDER 1</h4>
+                    <span class="role">Chief Visionary</span>
+                    <p class="bio">Peneliti & Pengelola Jurnal.</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-photo"><img src="https://ui-avatars.com/api/?name=F2&background=2563eb&color=fff" alt="F2"></div>
+                    <h4>FOUNDER 2</h4>
+                    <span class="role">Tech Lead</span>
+                    <p class="bio">Digital Expert.</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-photo"><img src="https://ui-avatars.com/api/?name=F3&background=d97706&color=fff" alt="F3"></div>
+                    <h4>FOUNDER 3</h4>
+                    <span class="role">Operations</span>
+                    <p class="bio">Program Manager.</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-photo"><img src="https://ui-avatars.com/api/?name=F4&background=c2410c&color=fff" alt="F4"></div>
+                    <h4>FOUNDER 4</h4>
+                    <span class="role">Finance</span>
+                    <p class="bio">Public Accountant.</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-photo"><img src="https://ui-avatars.com/api/?name=F5&background=7e22ce&color=fff" alt="F5"></div>
+                    <h4>FOUNDER 5</h4>
+                    <span class="role">Communication</span>
+                    <p class="bio">Public Relations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donation-box" class="donation-area">
+        <div class="donation-box">
+            <h2>Pilih <span>Donasi Anda</span></h2>
+            <p>Lengkapi formulir di bawah untuk melanjutkan pembayaran.</p>
+            <form id="saweriaForm">
+                <div class="input-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="donorName" placeholder="Hamba Allah" required>
+                </div>
+                <div class="input-group">
+                    <label>Nominal (IDR)</label>
+                    <input type="number" id="donorAmount" placeholder="Contoh: 50000" required>
+                </div>
+                <div class="input-group">
+                    <label>Pilih Kategori Program</label>
+                    <select id="donorProgram">
+                        <option value="Palestina">Palestina (Darurat)</option>
+                        <option value="Stunting">Anak Stunting (Gizi)</option>
+                        <option value="Duafa">Duafa (Pemberdayaan)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Doa & Harapan</label>
+                    <textarea id="donorMessage" placeholder="Semoga berkah..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Konfirmasi via Saweria</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-logo">PEDULI<span>SESAMA</span></a>
+            <p>&copy; 2026 PeduliSesama Global. Dikelola oleh Tim Founder.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // Saweria logic
+        document.getElementById('saweriaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = "USERNAME_ANDA"; // GANTI INI
+            const name = encodeURIComponent(document.getElementById('donorName').value);
+            const amount = document.getElementById('donorAmount').value;
+            const msg = encodeURIComponent(document.getElementById('donorMessage').value);
+            const program = document.getElementById('donorProgram').value;
+            
+            if (amount < 10000) { alert("Minimal donasi Rp 10.000"); return; }
+            
+            const url = `https://saweria.co/${username}?amt=${amount}&msg=${msg}%20(Program:%20${program})&name=${name}`;
+            window.open(url, '_blank');
+        });
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
